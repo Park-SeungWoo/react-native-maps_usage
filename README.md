@@ -108,11 +108,11 @@
 >   <dict>
 >       ...
 >       <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
->       <string>maptest</string>
+>       <string>test</string>
 >       <key>NSLocationAlwaysUsageDescription</key>
 >       <string>test</string>
 >       <key>NSLocationWhenInUseUsageDescription</key>
->       <string>To test the library</string>
+>       <string>test</string>
 >       ...
 >   </dict>
 > ```
