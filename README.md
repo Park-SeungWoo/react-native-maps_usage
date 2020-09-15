@@ -91,14 +91,14 @@
 > - Install @react-native-community/geolocation
 >
 > ```bash
->   npm install @react-native-community/geolocation
+>   npm install @react-native-community/geolocation --save
 > ```
 >
 > ### **For ios**
 >
 > - First, open ~project/ios/project_name/info.plist file. <br> And add these lines.
 >
-> ```md
+> ```xml
 > <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 > <string>maptest</string>
 > <key>NSLocationAlwaysUsageDescription</key>
@@ -106,3 +106,7 @@
 > <key>NSLocationWhenInUseUsageDescription</key>
 > <string>To test the library</string>
 > ```
+>
+> - Second, set up the simulator
+>
+>   Go to simulator menubar -> features -> location <br> And click anything you want <br> then simulator might get its own location.
