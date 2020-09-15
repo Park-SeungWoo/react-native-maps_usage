@@ -2,7 +2,7 @@
 
 ## Execution screen
 
-> <img src="./images/Execute_screen.png" />
+<img src="./images/Execute_screen.png" />
 
 ---
 
