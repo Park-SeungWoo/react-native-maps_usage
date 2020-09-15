@@ -6,21 +6,23 @@
 
 ---
 
+### Source, more details
+
+[react-native-maps](https://github.com/react-native-community/react-native-maps)
+
+---
+
 ## How to use
 
-> ### Source, more details
->
-> [react-native-maps](https://github.com/react-native-community/react-native-maps)
-
-> ### **For ios**
->
-> - First, install react-native-maps
+> - Install react-native-maps
 >
 > ```bash
 >   npm install --save react-native-maps
 > ```
 >
-> - Second, Move dir to ~project/ios and run pod install
+> ### **For ios**
+>
+> - First, Move dir to ~project/ios and run pod install
 >
 > ```bash
 >   # in project dir
@@ -30,7 +32,7 @@
 >   cd ..
 > ```
 >
-> - Third, use MapView
+> - Second, use MapView
 >
 > ```javascript
 >   import MapView from 'react-native-maps';
@@ -81,3 +83,26 @@
 > ```
 >
 > It'll use the google map
+
+# Geolocation usage
+
+> ## How to use
+>
+> - Install @react-native-community/geolocation
+>
+> ```bash
+>   npm install @react-native-community/geolocation
+> ```
+>
+> ### **For ios**
+>
+> - First, open ~project/ios/project_name/info.plist file. <br> And add these lines.
+>
+> ```md
+> <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+> <string>maptest</string>
+> <key>NSLocationAlwaysUsageDescription</key>
+> <string>test</string>
+> <key>NSLocationWhenInUseUsageDescription</key>
+> <string>To test the library</string>
+> ```
