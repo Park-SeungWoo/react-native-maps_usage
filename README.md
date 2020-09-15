@@ -10,8 +10,6 @@
 
 [react-native-maps](https://github.com/react-native-community/react-native-maps)
 
----
-
 ## How to use
 
 > - Install react-native-maps
@@ -89,8 +87,6 @@
 ## Source, more details
 
 [Geolocation](https://github.com/react-native-community/react-native-geolocation)
-
----
 
 > ## How to use
 >
