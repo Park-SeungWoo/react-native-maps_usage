@@ -22,7 +22,7 @@
 >
 > ### **For ios**
 >
-> - First, Move dir to ~project/ios and run pod install
+> - First, Move dir to ~/project/ios and run pod install
 >
 > ```bash
 >   # in project dir
@@ -46,7 +46,7 @@
 > ### **For android**
 >
 > - First, get google api key.
-> - Second, open ~project/android/app/src/main/AndroidManifest.xml file. <br/> And add these lines in application element
+> - Second, open ~/project/android/app/src/main/AndroidManifest.xml file. <br/> And add these lines in application element
 >
 > ```xml
 >   <application
@@ -59,7 +59,7 @@
 >   </application>
 > ```
 >
-> - Third, open ~project/android/build.gradle file. <br/> And add these lines in ext
+> - Third, open ~/project/android/build.gradle file. <br/> And add these lines in ext
 >
 > ```gradle
 >   buildscript {
@@ -96,17 +96,33 @@
 >
 > ### **For ios**
 >
-> - First, open ~project/ios/project_name/info.plist file. <br> And add these lines.
+> - First, open ~/project/ios/project_name/info.plist file. <br> And add these lines.
 >
 > ```xml
-> <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-> <string>maptest</string>
-> <key>NSLocationAlwaysUsageDescription</key>
-> <string>test</string>
-> <key>NSLocationWhenInUseUsageDescription</key>
-> <string>To test the library</string>
+>   <dict>
+>       ...
+>       <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+>       <string>maptest</string>
+>       <key>NSLocationAlwaysUsageDescription</key>
+>       <string>test</string>
+>       <key>NSLocationWhenInUseUsageDescription</key>
+>       <string>To test the library</string>
+>   </dict>
 > ```
 >
 > - Second, set up the simulator
 >
->   Go to simulator menubar -> features -> location <br> And click anything you want <br> then simulator might get its own location.
+>   Go to simulator menubar -> features -> location <br> And click anything you want <br> then simulator may get its own location.
+>
+> ### **For Android**
+>
+> - First, open ~/project/android/app/src/main/AndroidManifest.xml file. <br> And add this line in manifest element.
+>
+> ```xml
+>   <manifest
+>       ...>
+>   ...
+>   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+>   ...
+>   </manifest>
+> ```
