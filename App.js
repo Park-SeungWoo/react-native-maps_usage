@@ -8,7 +8,7 @@ import {
   StatusBar,
   Dimensions,
 } from 'react-native';
-import MapView, {Marker} from 'react-native-maps';
+import MapView, {Marker, PROVIDER_GOOGLE} from 'react-native-maps';
 import Geolocation from '@react-native-community/geolocation';
 
 const pwidth = Dimensions.get('window').width;
@@ -16,8 +16,8 @@ const pheight = Dimensions.get('window').height;
 
 export default class App extends Component {
   state = {
-    lat: 32.1111, // dummy value
-    long: 122.121212, //dummy value
+    lat: 10, // dummy value
+    long: 10, //dummy value
   };
 
   componentDidMount() {
@@ -40,17 +40,27 @@ export default class App extends Component {
     return (
       <MapView
         style={styles.map}
+        // provider={PROVIDER_GOOGLE}
         region={{
           latitude: this.state.lat,
           longitude: this.state.long,
-          latitudeDelta: 0.9,
-          longitudeDelta: 0.9,
+          latitudeDelta: 0.009,
+          longitudeDelta: 0.009,
         }}>
         <Marker
           draggable
           coordinate={{latitude: this.state.lat, longitude: this.state.long}}
           title={'sample'}
           description={'sample marker'}
+        />
+        <Marker
+          draggable
+          coordinate={{
+            latitude: this.state.lat - 0.001,
+            longitude: this.state.long - 0.001,
+          }}
+          title={'sample2'}
+          description={'sample marker2'}
         />
       </MapView>
     );
