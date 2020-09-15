@@ -86,6 +86,12 @@
 
 # Geolocation usage
 
+### Source, more details
+
+[Geolocation](https://github.com/react-native-community/react-native-geolocation)
+
+---
+
 > ## How to use
 >
 > - Install @react-native-community/geolocation
