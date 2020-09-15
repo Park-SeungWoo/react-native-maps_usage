@@ -107,12 +107,24 @@
 >       <string>test</string>
 >       <key>NSLocationWhenInUseUsageDescription</key>
 >       <string>To test the library</string>
+>       ...
 >   </dict>
 > ```
 >
 > - Second, set up the simulator
 >
 >   Go to simulator menubar -> features -> location <br> And click anything you want <br> then simulator may get its own location.
+>
+> - Third, and use it!
+>
+> ```javascript
+>   import Geolocation from '@react-native-community/geolocation'
+>   ...
+>   Geolocation.getCurrentPosition(
+>       position => console.log(position);
+>   );
+>   ...
+> ```
 >
 > ### **For Android**
 >
@@ -125,4 +137,15 @@
 >   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 >   ...
 >   </manifest>
+> ```
+>
+> - Second, and use it!
+>
+> ```javascript
+>   import Geolocation from '@react-native-community/geolocation'
+>   ...
+>   Geolocation.getCurrentPosition(
+>       position => console.log(position);
+>   );
+>   ...
 > ```
