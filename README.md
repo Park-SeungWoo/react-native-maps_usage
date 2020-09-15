@@ -6,7 +6,7 @@
 
 ---
 
-### Source, more details
+## Source, more details
 
 [react-native-maps](https://github.com/react-native-community/react-native-maps)
 
@@ -86,7 +86,7 @@
 
 # Geolocation usage
 
-### Source, more details
+## Source, more details
 
 [Geolocation](https://github.com/react-native-community/react-native-geolocation)
 
