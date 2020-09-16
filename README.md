@@ -98,7 +98,17 @@
 >
 > ### **For ios**
 >
-> - First, open ~/project/ios/project_name/info.plist file. <br> And add these lines.
+> - First, Move dir to ~/project/ios and run pod install
+>
+> ```bash
+>   # in project dir
+>
+>   cd ios
+>   pod install
+>   cd ..
+> ```
+>
+> - Second, open ~/project/ios/project_name/info.plist file. <br> And add these lines.
 >
 > ```xml
 >   <dict>
@@ -113,7 +123,7 @@
 >   </dict>
 > ```
 >
-> - Second, set up the simulator
+> - Third, set up the simulator
 >
 >   Go to simulator menubar -> features -> location <br> And click anything you want <br> then simulator may get its own location.
 >
