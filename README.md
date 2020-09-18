@@ -90,6 +90,8 @@
 
 > ## How to use
 >
+> _This doc was written for RN version >= 0.60_
+>
 > - Install @react-native-community/geolocation
 >
 > ```bash
