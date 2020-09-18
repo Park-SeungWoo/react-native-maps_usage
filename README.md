@@ -12,6 +12,8 @@
 
 ## How to use
 
+> _This doc was written for RN version >= 0.60_
+>
 > - Install react-native-maps
 >
 > ```bash
@@ -88,8 +90,8 @@
 
 [Geolocation](https://github.com/react-native-community/react-native-geolocation)
 
-> ## How to use
->
+## How to use
+
 > _This doc was written for RN version >= 0.60_
 >
 > - Install @react-native-community/geolocation
